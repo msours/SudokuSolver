@@ -49,7 +49,5 @@ int main()
 		std::cout << "Could not solve puzzle. Perhaps this puzzle is invalid?\n\n";
 	}
 
-	std::string F = "";
-
 	return 0;
 }
