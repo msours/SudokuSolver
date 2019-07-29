@@ -14,7 +14,11 @@ project(${project_name} DESCRIPTION "Retrieves Sudoku puzzle from the web (hoste
 
 include_directories(./include /usr/include)
 
-find_package(Boost REQUIRED COMPONENTS system thread)
+if(UNIX)
+	find_package(Boost REQUIRED COMPONENTS system thread)
+else()
+	find_package(Boost REQUIRED COMPONENTS system)
+endif()
 
 set(Boost_USE_STATIC_LIBS     OFF)
 set(Boost_USE_MULTITHREADED    ON)
