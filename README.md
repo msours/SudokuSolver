@@ -2,6 +2,7 @@
 Retrieves Sudoku puzzle from the web (hosted by University of Texas), and then attempts to solve the puzzle first with simple deduction. Then solves the puzzle through recursive back tracking.
 
 Dependencies: boost
+
 Boost is used to create the web client that retrieves a randomly generated Sudoku puzzle from a web service hosted by University of Texas:
 http://www.cs.utep.edu/cheon/ws/sudoku/
 
