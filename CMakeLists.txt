@@ -16,14 +16,15 @@ include_directories(./include /usr/include)
 
 if(UNIX)
 	find_package(Boost REQUIRED COMPONENTS system thread)
-else()
-	find_package(Boost REQUIRED COMPONENTS system)
 endif()
 
 set(Boost_USE_STATIC_LIBS     OFF)
 set(Boost_USE_MULTITHREADED    ON)
 include_directories(${Boost_INCLUDE_DIRS})
-link_directories(${Boost_LIBRARY_DIRS})
+
+if(UNIX)
+    link_directories(${Boost_LIBRARY_DIRS})
+endif()
 
 add_executable(SudokuSolver
     src/Puzzle.cpp
@@ -31,4 +32,6 @@ add_executable(SudokuSolver
     src/SudokuSolver.cpp
 )
 
-target_link_libraries(SudokuSolver ${Boost_LIBRARIES})
+if(UNIX)
+    target_link_libraries(SudokuSolver ${Boost_LIBRARIES})
+endif()
