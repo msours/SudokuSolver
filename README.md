@@ -16,5 +16,5 @@ http://www.cs.utep.edu/cheon/ws/sudoku/
 1. download a boost release (tested with 1.70): https://www.boost.org/
 2. mkdir build
 3. cd build
-4. cmake .. -G "Visual Studio 15 2017 Win64" -D Boost_INCLUDE_DIRS=<Path To Boost download>
+4. cmake .. -G "Visual Studio 15 2017 Win64" -D Boost_INCLUDE_DIRS=\<Path To Boost download>
 5. cmake --build . --config <debug/release>
