@@ -7,13 +7,13 @@ Boost is used to create the web client that retrieves a randomly generated Sudok
 http://www.cs.utep.edu/cheon/ws/sudoku/
 
 
-##To build on Linux:
+## To build on Linux:
 1. mkdir build
 2. cd build
 3. cmake ..
 4. make
 
-##To build on Windows (tested with Visual Studio 2017):
+## To build on Windows (tested with Visual Studio 2017):
 1. download a boost release (tested with 1.70):
 2. https://www.boost.org/
 3. mkdir build
