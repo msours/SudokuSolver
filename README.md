@@ -6,7 +6,6 @@ Dependencies: boost
 Boost is used to create the web client that retrieves a randomly generated Sudoku puzzle from a web service hosted by University of Texas:
 http://www.cs.utep.edu/cheon/ws/sudoku/
 
-
 ## To build on Linux:
 1. mkdir build
 2. cd build
@@ -14,9 +13,8 @@ http://www.cs.utep.edu/cheon/ws/sudoku/
 4. make
 
 ## To build on Windows (tested with Visual Studio 2017):
-1. download a boost release (tested with 1.70):
-2. https://www.boost.org/
-3. mkdir build
-4. cd build
-5. cmake .. -G "Visual Studio 15 2017 Win64" -D Boost_INCLUDE_DIRS='<Path To Boost download>'
-6. cmake --build . --config <debug/release>
+1. download a boost release (tested with 1.70): https://www.boost.org/
+2. mkdir build
+3. cd build
+4. cmake .. -G "Visual Studio 15 2017 Win64" -D Boost_INCLUDE_DIRS=<Path To Boost download>
+5. cmake --build . --config <debug/release>
